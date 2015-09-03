@@ -1,1 +1,1 @@
-include ':compartment'
+include ':compartment', ':sample'
