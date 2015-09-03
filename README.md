@@ -6,7 +6,8 @@ Compartment is an MVP (Model View Presenter) library for Android. It aims to mak
 
 ## Usage
 
-#### Step 1: create a custom `Application` class and extend `ComponentCacheApplication`:
+#### Step 1: 
+Create a custom `Application` class and extend `ComponentCacheApplication`
 
 ```
 public class MyApp extends ComponentCacheApplication {
@@ -22,7 +23,8 @@ Remember to add it to your manifest:
 </application>
 ```
 
-#### Step 2: create a "view" interface (the "V" in MVP):
+#### Step 2: 
+Create a "view" interface (the "V" in MVP)
 
 ```
 public interface MyView {
@@ -33,7 +35,8 @@ public interface MyView {
 }
 ```
 
-#### Step 3: create a presenter that implements `Presenter` or uses the convenience class `BasePresenter`:
+#### Step 3: 
+Create a presenter that implements `Presenter` or uses the convenience class `BasePresenter`
 ```
 public class MyPresenter extends BasePresenter<MyView> {
   public void someLongTask() {
@@ -54,7 +57,8 @@ public class MyPresenter extends BasePresenter<MyView> {
 }
 ```
 
-#### Step 4: create an object to hold a presenter (implements `HasPresenter`):
+#### Step 4: 
+Create an object to hold a presenter (implements `HasPresenter`)
 
 ```
 public class MyPresenterComponent implements HasPresenter<MyPresenter> {
@@ -66,7 +70,8 @@ public class MyPresenterComponent implements HasPresenter<MyPresenter> {
 }
 ```
 
-#### Step 5: create a Fragment that extends `PresenterControllerFragment` and imlpements your view interface:
+#### Step 5: 
+Create a Fragment that extends `PresenterControllerFragment` and imlpements your view interface
 
 ```
 public class MyFragment extends PresenterControllerFragment<MyPresenterComponent, MyPresenter> implements MyView {
