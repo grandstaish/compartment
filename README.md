@@ -24,7 +24,7 @@ Remember to add it to your manifest:
 ```
 
 #### Step 2: 
-Create a "view" interface (the "V" in MVP)
+Create a view interface
 
 ```
 public interface MyView {
