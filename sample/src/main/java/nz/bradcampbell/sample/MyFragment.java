@@ -22,6 +22,8 @@ public class MyFragment extends PresenterControllerFragment<MyPresenterComponent
     @Override public void doSomething() {
         MyPresenter p = getPresenter();
 
+        // Print the memory location in logcat so see if it is the same instance
+        // on config changes
         Log.d("TEST", p.toString());
     }
 }
