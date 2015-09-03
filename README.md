@@ -11,7 +11,7 @@ Create a custom `Application` class and extend `ComponentCacheApplication`
 
 ```
 public class MyApp extends ComponentCacheApplication {
-    ...
+  ...
 }
 ```
 
@@ -19,7 +19,7 @@ Remember to add it to your manifest:
 
 ```
 <application android:name=".MyApp">
-        ...
+  ...
 </application>
 ```
 
@@ -52,7 +52,7 @@ public class MyPresenter extends BasePresenter<MyView> {
         view.doSomething();
         view.hideLoading();
       }
-    }.start();
+    }.execute();
   }
 }
 ```
