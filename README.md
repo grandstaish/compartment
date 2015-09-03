@@ -86,9 +86,10 @@ Your fragment now has an associated presenter that you can access using `getPres
 
 Note that `PresenterControllerFragment` is another convenience class. If you need to extend ListFragment, MapFragment, or any other type of Fragment, you can use the `PresenterControllerDelegate` class and forward all of the events just like `PresenterControllerFragment` does internally. 
 
-## Tip
+## Tips
 
-This library works well when combined with Dagger 2 as you can use Dagger 2 components for Step 4.
+- This library works well when combined with Dagger 2 as you can use Dagger 2 components for Step 4.
+- The components can hold more than just presenters, they could hold any object you want to survive a configuration change. The components can be accessed at any point by calling `getComponent` in the Fragment. 
 
 ## Example
 
