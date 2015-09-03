@@ -84,7 +84,7 @@ public class MyFragment extends PresenterControllerFragment<MyPresenterComponent
 
 Your fragment now has an associated presenter that you can access using `getPresenter()`. This presenter will survive configuration changes and will have it's lifecycle methods called automatically.
 
-Note that `PresenterControllerFragment` is another convenience class. If you need to extend ListFragment, MapFragment, or any other type of Fragment, you can use the `PresenterControllerDelegate` class and forward all of the events just like `PresenterControllerFragment` does. 
+Note that `PresenterControllerFragment` is another convenience class. If you need to extend ListFragment, MapFragment, or any other type of Fragment, you can use the `PresenterControllerDelegate` class and forward all of the events just like `PresenterControllerFragment` does internally. 
 
 ## Tip
 
