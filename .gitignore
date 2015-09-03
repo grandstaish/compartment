@@ -1,0 +1,14 @@
+.idea
+*.iml
+*.ipr
+*.iws
+classes
+gen-external-apklibs
+.gradle
+build
+local.properties
+.DS_Store
+tmp
+*.swp
+*.lock
+profile
