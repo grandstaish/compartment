@@ -7,7 +7,7 @@ Compartment is an MVP (Model View Presenter) library for Android. It aims to mak
 ## Usage
 
 #### Step 1: 
-Create a custom `Application` class and extend `ComponentCacheApplication`
+Create a custom `Application` class that implements `ComponentCache` or extends the convenience class `ComponentCacheApplication`
 
 ```
 public class MyApp extends ComponentCacheApplication {
