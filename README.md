@@ -2,7 +2,7 @@
 
 ## Overview
 
-Compartment is an extemely lightweight MVP (Model View Presenter) library for Android. It aims to make scoping really easy for Presenters so that they don't get destroyed on configuration changes. 
+Compartment is an extemely lightweight MVP (Model View Presenter) library for Android. It aims to make scoping really easy for Presenters so that each fragment has an associated presenter and that presenter instance doesn't get destroyed on configuration changes. 
 
 ## Usage
 
