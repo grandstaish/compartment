@@ -103,7 +103,7 @@ repositories {
 }
 
 dependencies {
-  compile 'nz.bradcampbell.compartment:compartment:0.0.2'
+  compile 'nz.bradcampbell.compartment:compartment:0.0.3'
 }
 ```
 
