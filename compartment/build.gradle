@@ -23,7 +23,7 @@ ext {
     siteUrl = 'https://github.com/grandstaish/compartment'
     gitUrl = 'https://github.com/grandstaish/compartment.git'
 
-    libraryVersion = '0.0.3'
+    libraryVersion = '0.0.4'
 
     developerId = 'grandstaish'
     developerName = 'Bradley Campbell'

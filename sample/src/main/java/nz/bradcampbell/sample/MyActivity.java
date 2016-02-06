@@ -1,9 +1,10 @@
 package nz.bradcampbell.sample;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-public class MyActivity extends AppCompatActivity {
+import nz.bradcampbell.compartment.ComponentCacheActivity;
+
+public class MyActivity extends ComponentCacheActivity {
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_activity);

@@ -13,7 +13,7 @@ public abstract class ComponentControllerFragment<C> extends Fragment {
     @CallSuper
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ComponentCache componentCache = (ComponentCache) getActivity().getApplication();
+        ComponentCache componentCache = getComponentCache();
         componentDelegate.onCreate(componentCache, savedInstanceState, componentFactory);
     }
 
@@ -36,6 +36,11 @@ public abstract class ComponentControllerFragment<C> extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         componentDelegate.onDestroy();
+    }
+
+    /** Override this method to use a custom component cache */
+    protected ComponentCache getComponentCache() {
+        return (ComponentCache) getActivity();
     }
 
     public C getComponent() {

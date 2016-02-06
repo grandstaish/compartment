@@ -7,21 +7,7 @@ Compartment is an extemely lightweight MVP (Model View Presenter) library for An
 ## Usage
 
 #### Step 1: 
-Create a custom `Application` class that implements `ComponentCache` or extends the convenience class `ComponentCacheApplication`
-
-```
-public class MyApp extends ComponentCacheApplication {
-  ...
-}
-```
-
-Remember to add it to your manifest:
-
-```
-<application android:name=".MyApp">
-  ...
-</application>
-```
+Make your Activity (or Activities) extend ComponentCacheActivity or build a custom class that implements ComponentCache.
 
 #### Step 2: 
 Create a view interface
@@ -82,6 +68,8 @@ public class MyFragment extends PresenterControllerFragment<MyPresenterComponent
 }
 ```
 
+If you made a custom ComponentCache in step 1, you need to override `getComponentCache()` in this Fragment too.
+
 Your fragment now has an associated presenter that you can access using `getPresenter()`. This presenter will survive configuration changes and will have it's lifecycle methods called automatically.
 
 Note that `PresenterControllerFragment` is another convenience class. If you need to extend ListFragment, MapFragment, or any other type of Fragment, you can use the `PresenterControllerDelegate` class and forward all of the events just like `PresenterControllerFragment` does internally. 
@@ -103,7 +91,7 @@ repositories {
 }
 
 dependencies {
-  compile 'nz.bradcampbell.compartment:compartment:0.0.3'
+  compile 'nz.bradcampbell.compartment:compartment:0.0.4'
 }
 ```
 
