@@ -11,10 +11,15 @@ import nz.bradcampbell.compartment.ComponentCacheActivity;
  * @see ComponentCacheActivity
  */
 public class MyActivity extends ComponentCacheActivity {
-    @Override protected void onCreate(Bundle savedInstanceState) {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         // Initialize layout
         setContentView(R.layout.my_activity);
+
         if (savedInstanceState == null) {
             // Instantiate a new MyFragment.class and add it to the root layout
             getSupportFragmentManager()

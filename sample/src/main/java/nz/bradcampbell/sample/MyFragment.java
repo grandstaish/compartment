@@ -6,8 +6,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.TextView;
+
 import nz.bradcampbell.compartment.PresenterControllerFragment;
 
 /**
@@ -21,19 +21,27 @@ public class MyFragment extends PresenterControllerFragment<MyPresenterComponent
      */
     private TextView mContent;
 
-    @Override protected MyPresenterComponent onCreateNonConfigurationComponent() {
+    @Override
+    protected MyPresenterComponent onCreateNonConfigurationComponent() {
+
         return new MyPresenterComponent();
     }
 
-    @Nullable @Override
+    @Nullable
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         final View rootView = inflater.inflate(R.layout.my_layout, container, false);
+
         // Initialize content TextView
         mContent = ((TextView) rootView.findViewById(R.id.content));
+
         return rootView;
     }
 
-    @Override public void doSomething() {
+    @Override
+    public void doSomething() {
+
         // Retrieve the presenter related to this MyFragment instance
         MyPresenter p = getPresenter();
 

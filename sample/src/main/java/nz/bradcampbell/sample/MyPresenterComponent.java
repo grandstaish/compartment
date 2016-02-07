@@ -12,7 +12,9 @@ public class MyPresenterComponent implements HasPresenter<MyPresenter> {
      */
     private MyPresenter presenter = new MyPresenter();
 
-    @Override public MyPresenter getPresenter() {
+    @Override
+    public MyPresenter getPresenter() {
+
         return presenter;
     }
 }
