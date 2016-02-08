@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Sample</string>
+    <string name="app_name">Compartment Sample</string>
+    <string name="heading">Attached Presenter Instance:</string>
 </resources>
