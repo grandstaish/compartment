@@ -1,5 +1,7 @@
 # compartment
 
+**13/05/16 Deprecated: this library is no longer maintained. For an alternative solution to this library, Ian Lake from Google recommends using Loaders to persist presenters across configuration changes (https://twitter.com/ianhlake/status/695740092980137984).**
+
 ## Overview
 
 Compartment is an extemely lightweight MVP (Model View Presenter) library for Android. It aims to make scoping really easy for Presenters so that each fragment has an associated presenter and that presenter instance doesn't get destroyed on configuration changes. 
